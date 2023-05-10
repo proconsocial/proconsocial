@@ -1,0 +1,165 @@
+body {
+  font-family: 'ariel', sans-serif;
+  margin: 5;
+  padding: 0;
+  background-color: #169fb1;
+}
+
+header {
+  background-color: #05077a;
+  color: #fff;
+  padding: 15px;
+}
+
+h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #bbbbbb;
+}
+
+main {
+  margin: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.post {
+  border: 2px solid #131212;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.post h3 {
+  margin: 0;
+}
+
+.post a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.post a:hover {
+  color: #667;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #05077a;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.form-group input {
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 500px;
+  border: 4px solid #000000;
+}
+
+.my-text {
+  font-family: 'Signika Negative', sans-serif;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  font-size: 20px;
+  background-color: #169fb1;
+  color: #fff;
+  text-align: center;
+  transition: transform 1s ease-in-out;
+  animation: spin 1s ease-in-out infinite;
+}
+
+.button:hover {
+  transform: scale(1.2) rotate(360deg);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+.transition-image {
+  transition: all 0.5s ease-in-out;
+}
+
+.transition-image:hover {
+  transform: scale(1.2);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* Styles for devices with a screen width of 1024px or larger */
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+}
+

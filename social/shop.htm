@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sales Page</title>
+	<link rel="stylesheet" type="text/css" href="css\procon.css">
+	<link rel="stylesheet" type="text/css" href="css\print.css">
+	<link rel="stylesheet" type="text/css" href="css\logo.css">
+	<link rel="stylesheet" href="path/to/slicknav.min.css">
+	<script src="path/to/jquery.min.js"></script>
+	<script src="css\slicknav.css"></script>
+	<script>
+	  $(document).ready(function(){
+	    $('#menu').slicknav();
+	  });
+	</script>
+</head>
+<body>
+	<header>
+        <h1>Pro-Con-Social</h1>
+		
+	</header>
+	<main>
+		<section class="sales">
+			<ul>
+				<li>
+					<img class="transition-image" img src="images\Plain-Red-Hat.jpg" alt="Plain Red Hat" style="width: 100px; height: 100px;">
+					<h3>Red Hat</h3>
+					<p>plain red Hat.</p>
+					<p>Price: $10</p>
+					<div class="quantity">
+						<input type="number" value="0" min="0" max="10">
+					</div>
+				</li>
+				<li>
+					<img class="transition-image" img src="images\blue hat.jpeg" alt="Plain Red Hat" style="width: 120px; height: 120px;">
+					<h3>Blue Hat</h3>
+					<p>plain blue Hat.</p>
+					<p>Price: $10</p>
+					<div class="quantity">
+						<input type="number" value="0" min="0" max="10">
+					</div>
+				</li>
+				<li>
+					<img class="transition-image" img src="images\book title question mark_1 (1).jpg" alt="Plain Red Hat" style="width: 100px; height: 100px;">
+					<h3>Deliverance: 2056</h3>
+					<p>Coming Soon.</p>
+					<p>Price: TBD</p>
+					<div class="quantity">
+						<input type="number" value="0" min="0" max="10">
+					</div>
+				</li>
+			</ul>
+			<button onclick="window.location.href='checkout.htm'">Go to Checkout</button>
+		</section>
+	</main>
+	<div class="post">
+        <h3><a href="#">Comments:</a>
+          <p><form>
+            <textarea id="comments" name="comments"></textarea>
+            <br>
+            <input type="submit" value="Submit">
+          </form>
+          </p>
+        </div>
+	<footer>
+		<nav>
+			<ul>
+              <li><a href="pro-con-social.htm">Home</a></li>
+              <li><a href="about.htm">About</a></li>
+              <li><a href="contact.htm">Contact</a></li>
+			  <li><a href="public events.html">Events</a></li>
+            </ul>
+          </nav>
+        <p>&copy; 2023 Pro-Con-Social</p>
+        <h6>This website is satirical</h6>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pro-Con-Social</title>
+    <link rel="stylesheet" type="text/css" href="css\procon.css">
+    <link rel="stylesheet" type="text/css" href="css\print.css">
+    <script src="css\slicknav.css"></script>
+    <script>
+      $(document).ready(function(){
+        $('#menu').slicknav();
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Pro-Con-Social</h1>
+    </header>
+    <h1>Upcoming public Events</h1>
+    <ul>
+      <li>
+        <h2>Event</h2>
+        <p>Oregon trail historical news walk</p>
+        <p>Date: March 14 2024</p>
+        <p>Time: starts at 2pm</p>
+        <p>Location: silver falls state park, Oregon</p>
+        <p>Description of Event: A short hike in support of famous journalist of the past present and future. This hike will only be about 1/2 mile and will be great for the kids.</p>
+      </li>
+      <li>
+        <h2>Event</h2>
+        <p>Deliverance: 2056 book tour</p>
+        <p>Date: june 10th</p>
+        <p>Time: 4:30pm </p>
+        <p>Location:Florida, library of relevant events</p>
+        <p>Description of Event: A book tour for the book "deliverance: 2056" written by one of our own writers.</p>
+      </li>
+      <li>
+        <h2>Event</h2>
+        <p>Capitol Tour</p>
+        <p>Date:January 4-7 2025</p>
+        <p>Time: 4:30pm</p>
+        <p>Location: washinton DC</p>
+        <p>Description of Event: Tours of the historical capitol building during the historic event of a presidential inauguration.</p>
+      </li>
+      <h3>We can't wait to hear from you!</h3>
+    </ul>
+    <div class="post">
+      <h3><a href="#">Comments:</a>
+        <p><form>
+          <textarea id="comments" name="comments"></textarea>
+          <br>
+          <input type="submit" value="Submit">
+        </form>
+        </p>
+      </div>
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="pro-con-social.htm">Home</a></li>
+          <li><a href="about.htm">About</a></li>
+          <li><a href="contact.htm">Contact</a></li>
+          <li><a href="shop.htm">Shop</a></li>
+        </ul>
+      </nav>
+      <p>&copy; 2023 Pro-Con-Social</p>
+      <h6>This website is satirical</h6>
+      <p id="datetime"></p>
+    </footer>
+    <script>
+      var datetime = document.getElementById("datetime");
+      setInterval(function() {
+  var options = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric' };
+  var currentDate = new Date().toLocaleString('en-US', options);
+  document.getElementById('datetime').innerHTML = currentDate;
+}, 60000);
+    </script>
+  </body>
+</html>

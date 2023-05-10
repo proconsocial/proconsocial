@@ -1,0 +1,31 @@
+@media print {
+    nav, footer, .button {
+      display: none;
+    }
+  }
+  
+  /* Style the printed content */
+  @media print {
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 12pt;
+      line-height: 1.5;
+      margin: 0;
+      padding: 0;
+    }
+    
+    h1, h2, h3 {
+      font-weight: bold;
+    }
+    
+    p {
+      margin-bottom: 1em;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 1em 0;
+    }
+  }
+  
